@@ -41,7 +41,9 @@ export class Counter extends Component{
 
     render(){
         return <div className="border m-3 p-4 rounded"> 
-          <div className="sub-title text-center m-5 fs-2">Counter: <span className="text-primary fs-2 p-2 fw-bold">{this.state.count}</span></div>
+        <h2 className="text-center">Class Based Counter</h2>
+        <hr/>
+          <div className="sub-title text-center m-2 fs-2">Counter Value: <span className="text-primary fs-2 p-2 fw-bold">{this.state.count}</span></div>
           <div className="d-flex justify-content-evenly flex-column gap-3">
               <button className ="btn btn-success fs-3" onClick={this.handleDecrement}>-</button>
               <button className ="btn btn-danger" onClick={this.handleReset}>Reset</button>
